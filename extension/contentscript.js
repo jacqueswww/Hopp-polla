@@ -24,8 +24,18 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	else if (request.command == 1)
 		videoElement.pause();
 	else if (request.command == 2)
-		volumeup(videoElement)
+		volumeup(videoElement);
 	else if (request.command == 3)
-		volumedown(videoElement)
+		volumedown(videoElement);
+	else if (request.command == 4) { // next
+		document.getElementsByClassName('next-playlist-list-item')[0].click();
+	}
+	else if (request.command == 5) { // previous
+		document.getElementsByClassName('prev-playlist-list-item')[0].click();
+	}
 
 });
+
+// accuradio:
+// document.getElementById('playerSkipButton').click()
+// document.getElementById('playerPauseButton').click()
