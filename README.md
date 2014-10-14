@@ -1,6 +1,8 @@
 Forkity Fork of Hoppípolla
 ( https://github.com/willemvds/Hopp-polla )
 
+aka. Youtube as your media player.
+
 ==========
 Required OS packages:
 
@@ -15,8 +17,10 @@ XF86Play -> Play.
 
 XF86Pause-> Pause.
 
--> Volume Up.
+XF86AudioRaiseVolume -> Volume Up.
 
-Alt + Page Down -> Volume Down.
+XF86AudioLowerVolume -> Volume Down.
 
 
+XF86Back -> Previous in playlist
+XF86Next -> Next in playlist
