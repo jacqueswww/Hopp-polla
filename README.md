@@ -1,11 +1,16 @@
-Hoppípolla
+Forkity Fork of Hoppípolla
+( https://github.com/willemvds/Hopp-polla )
+
 ==========
 
-Alt + Insert -> Play.
+Remapped some keys for multimedia keyboards.
 
-Alt + Home -> Pause.
+XF86Play -> Play.
 
-Alt + Page Up -> Volume Up.
+XF86Pause-> Pause.
+
+-> Volume Up.
 
 Alt + Page Down -> Volume Down.
+
 
