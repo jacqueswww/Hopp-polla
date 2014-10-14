@@ -2,6 +2,7 @@
 
 cd ./eventserver
 export GOPATH=`pwd`
+echo $GOPATH
 
 if [[ ! -d pkg ]]
 then

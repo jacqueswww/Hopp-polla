@@ -23,4 +23,5 @@ XF86AudioLowerVolume -> Volume Down.
 
 
 XF86Back -> Previous in playlist
+
 XF86Next -> Next in playlist
