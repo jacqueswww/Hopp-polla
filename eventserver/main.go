@@ -62,7 +62,7 @@ func main() {
 	socketChannels = make([]chan command, 0)
 	go func() {
 		var pause_state int
-		pause_state = 0
+		pause_state = 1
 
 		X, _ := xgbutil.NewConn()
 		keybind.Initialize(X)

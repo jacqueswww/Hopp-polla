@@ -19,8 +19,13 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	console.log(sender);
 	console.log(request);
 	var videoElement = document.getElementsByTagName('video')[0]
-	if (request.command == 0)
-		videoElement.play();
+	if (request.command == 0) {
+		if ( window.location.href.indexOf('accuradio.com') > -1) {
+			document.getElementById('playerPauseButton').click();
+		} else {
+			videoElement.play();
+		}
+	}
 	else if (request.command == 1)
 		videoElement.pause();
 	else if (request.command == 2)
@@ -28,7 +33,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	else if (request.command == 3)
 		volumedown(videoElement);
 	else if (request.command == 4) { // next
-		document.getElementsByClassName('next-playlist-list-item')[0].click();
+		if ( window.location.href.indexOf('accuradio.com') > -1 ) {
+			document.getElementById('playerSkipButton').click();
+		} else {
+			document.getElementsByClassName('next-playlist-list-item')[0].click();
+		}
 	}
 	else if (request.command == 5) { // previous
 		document.getElementsByClassName('prev-playlist-list-item')[0].click();

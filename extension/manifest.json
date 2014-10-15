@@ -6,7 +6,7 @@
     },
     "content_scripts": [{
         "js": ["contentscript.js"],
-        "matches": ["https://www.youtube.com/*", "http://www.youtube.com/*"],
+        "matches": ["https://www.youtube.com/*", "http://www.youtube.com/*", "http://www.accuradio.com/*"],
         "run_at": "document_end"
     }],
     "web_accessible_resources": ["script.js"],
